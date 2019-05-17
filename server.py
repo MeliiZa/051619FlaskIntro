@@ -79,6 +79,26 @@ def greet_person():
     </html>
     """.format(player, compliment)
 
+@app.route('/diss')
+def insult_person():
+  """Insults the user, its not nice, but it was in the instructions ¯_(ツ)_/¯ """
+    # player = request.args.get("person")
+
+    # insult = request.args.get("insult")
+
+  return """
+    <!doctype html>
+    <html>
+      <head>
+        <title>I will insult you ¯_(ツ)_/¯</title>
+      </head>
+      <body>
+      You are a....
+        
+        
+      </body>
+    </html>
+    """
 
 if __name__ == "__main__":
     # debug=True gives us error messages in the browser and also "reloads"
